@@ -1,0 +1,41 @@
+.mode-select-auto-complete.mode-select .mode-select-selection {
+  border: 0;
+  box-shadow: none;
+}
+.mode-select-auto-complete.mode-select .mode-select-selection__rendered {
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+  line-height: 28px;
+}
+.mode-select-auto-complete.mode-select .mode-select-selection__placeholder {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.mode-select-auto-complete.mode-select-allow-clear .mode-select-selection:hover .mode-select-selection__rendered {
+  margin-right: 0 !important;
+}
+.mode-select-auto-complete.mode-select .mode-input {
+  background: transparent;
+}
+.mode-select-auto-complete.mode-select-lg .mode-select-selection__rendered {
+  line-height: 32px;
+}
+.mode-select-auto-complete.mode-select-lg .mode-input {
+  padding: 6px 7px;
+  height: 32px;
+}
+.mode-select-auto-complete.mode-select-sm .mode-select-selection__rendered {
+  line-height: 22px;
+}
+.mode-select-auto-complete.mode-select-sm .mode-input {
+  padding: 1px 7px;
+  height: 22px;
+}
+.mode-select-auto-complete.mode-select .mode-input {
+  border-width: 1px;
+}
+.mode-select-auto-complete.mode-select .mode-input:focus,
+.mode-select-auto-complete.mode-select .mode-input:hover {
+  border-color: #49a9ee;
+}

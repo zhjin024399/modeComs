@@ -1,0 +1,213 @@
+.mode-fullcalendar {
+  font-size: 12px;
+  line-height: 1.5;
+  outline: none;
+  border-top: 1px solid #d9d9d9;
+}
+.mode-fullcalendar-month-select {
+  margin-left: 5px;
+}
+.mode-fullcalendar-header {
+  padding: 11px 16px 11px 0;
+  text-align: right;
+}
+.mode-fullcalendar-header .mode-select-dropdown {
+  text-align: left;
+}
+.mode-fullcalendar-header .mode-radio-group {
+  margin-left: 8px;
+  text-align: left;
+}
+.mode-fullcalendar-header label.mode-radio-button {
+  height: 22px;
+  line-height: 20px;
+  padding: 0 10px;
+}
+.mode-fullcalendar-date-panel {
+  position: relative;
+  outline: none;
+}
+.mode-fullcalendar-calendar-body {
+  padding: 8px 8px 14px;
+}
+.mode-fullcalendar table {
+  border-collapse: collapse;
+  max-width: 100%;
+  background-color: transparent;
+  width: 100%;
+  height: 246px;
+}
+.mode-fullcalendar table,
+.mode-fullcalendar th,
+.mode-fullcalendar td {
+  border: 0;
+}
+.mode-fullcalendar td {
+  position: relative;
+}
+.mode-fullcalendar-calendar-table {
+  border-spacing: 0;
+  margin-bottom: 0;
+}
+.mode-fullcalendar-column-header {
+  line-height: 18px;
+  padding: 0;
+  width: 33px;
+  text-align: center;
+}
+.mode-fullcalendar-column-header .mode-fullcalendar-column-header-inner {
+  display: block;
+  font-weight: normal;
+}
+.mode-fullcalendar-week-number-header .mode-fullcalendar-column-header-inner {
+  display: none;
+}
+.mode-fullcalendar-month,
+.mode-fullcalendar-date {
+  text-align: center;
+  transition: all .3s;
+}
+.mode-fullcalendar-value {
+  display: block;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background: transparent;
+  line-height: 22px;
+  transition: all .3s;
+}
+.mode-fullcalendar-value:hover {
+  background: #ecf6fd;
+  cursor: pointer;
+}
+.mode-fullcalendar-value:active {
+  background: #108ee9;
+  color: #fff;
+}
+.mode-fullcalendar-month-panel-cell .mode-fullcalendar-value {
+  width: 48px;
+}
+.mode-fullcalendar-today .mode-fullcalendar-value,
+.mode-fullcalendar-month-panel-current-cell .mode-fullcalendar-value {
+  box-shadow: 0 0 0 1px #108ee9;
+}
+.mode-fullcalendar-selected-day .mode-fullcalendar-value,
+.mode-fullcalendar-month-panel-selected-cell .mode-fullcalendar-value {
+  background: #108ee9;
+  color: #fff;
+}
+.mode-fullcalendar-disabled-cell-first-of-row .mode-fullcalendar-value {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.mode-fullcalendar-disabled-cell-last-of-row .mode-fullcalendar-value {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.mode-fullcalendar-last-month-cell .mode-fullcalendar-value,
+.mode-fullcalendar-next-month-btn-day .mode-fullcalendar-value {
+  color: rgba(0, 0, 0, 0.25);
+}
+.mode-fullcalendar-month-panel-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+}
+.mode-fullcalendar-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -9px;
+}
+.mode-fullcalendar-fullscreen {
+  border-top: 0;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-table {
+  table-layout: fixed;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-header .mode-radio-group {
+  margin-left: 16px;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-header label.mode-radio-button {
+  height: 28px;
+  line-height: 26px;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-month,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-date {
+  text-align: left;
+  margin: 0 4px;
+  display: block;
+  color: rgba(0, 0, 0, 0.65);
+  height: 116px;
+  padding: 4px 8px;
+  border-top: 2px solid #e9e9e9;
+  transition: background .3s;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-month:hover,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-date:hover {
+  background: #ecf6fd;
+  cursor: pointer;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-month:active,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-date:active {
+  background: #d2eafb;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-column-header {
+  text-align: right;
+  padding-right: 12px;
+  padding-bottom: 5px;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-value {
+  text-align: right;
+  background: transparent;
+  width: auto;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-today .mode-fullcalendar-value {
+  color: rgba(0, 0, 0, 0.65);
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-month-panel-current-cell .mode-fullcalendar-month,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-today .mode-fullcalendar-date {
+  border-top-color: #108ee9;
+  background: transparent;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-month-panel-current-cell .mode-fullcalendar-value,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-today .mode-fullcalendar-value {
+  box-shadow: none;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-month-panel-selected-cell .mode-fullcalendar-month,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-selected-day .mode-fullcalendar-date {
+  background: #ecf6fd;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-month-panel-selected-cell .mode-fullcalendar-value,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-selected-day .mode-fullcalendar-value {
+  color: #108ee9;
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-last-month-cell .mode-fullcalendar-date,
+.mode-fullcalendar-fullscreen .mode-fullcalendar-next-month-btn-day .mode-fullcalendar-date {
+  color: rgba(0, 0, 0, 0.25);
+}
+.mode-fullcalendar-fullscreen .mode-fullcalendar-content {
+  height: 90px;
+  overflow-y: auto;
+  position: static;
+  width: auto;
+  left: auto;
+  bottom: auto;
+}
+.mode-fullcalendar-disabled-cell .mode-fullcalendar-date,
+.mode-fullcalendar-disabled-cell .mode-fullcalendar-date:hover {
+  cursor: not-allowed;
+}
+.mode-fullcalendar-disabled-cell:not(.mode-fullcalendar-today) .mode-fullcalendar-date,
+.mode-fullcalendar-disabled-cell:not(.mode-fullcalendar-today) .mode-fullcalendar-date:hover {
+  background: transparent;
+}
+.mode-fullcalendar-disabled-cell .mode-fullcalendar-value {
+  color: rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+  width: auto;
+  cursor: not-allowed;
+}

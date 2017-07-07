@@ -1,0 +1,435 @@
+.mode-upload {
+  font-size: 12px;
+  outline: 0;
+}
+.mode-upload-btn {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+.mode-upload input[type="file"] {
+  cursor: pointer;
+}
+.mode-upload.mode-upload-select {
+  display: inline-block;
+}
+.mode-upload.mode-upload-select-picture-card {
+  border: 1px dashed #d9d9d9;
+  width: 96px;
+  height: 96px;
+  border-radius: 4px;
+  background-color: #fbfbfb;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.mode-upload.mode-upload-select-picture-card > .mode-upload {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+}
+.mode-upload.mode-upload-select-picture-card:hover {
+  border-color: #108ee9;
+}
+.mode-upload.mode-upload-drag {
+  border: 1px dashed #d9d9d9;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.mode-upload.mode-upload-drag.mode-upload-drag-hover:not(.mode-upload-disabled) {
+  border: 2px dashed #49a9ee;
+}
+.mode-upload.mode-upload-drag.mode-upload-disabled {
+  cursor: not-allowed;
+}
+.mode-upload.mode-upload-drag .mode-upload-btn {
+  display: table;
+  height: 100%;
+}
+.mode-upload.mode-upload-drag .mode-upload-drag-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.mode-upload.mode-upload-drag:not(.mode-upload-disabled):hover {
+  border-color: #49a9ee;
+}
+.mode-upload.mode-upload-drag p.mode-upload-drag-icon {
+  height: 60px;
+  margin-bottom: 24px;
+}
+.mode-upload.mode-upload-drag p.mode-upload-drag-icon .anticon {
+  font-size: 80px;
+  margin-top: -5px;
+  color: #49a9ee;
+}
+.mode-upload.mode-upload-drag p.mode-upload-text {
+  font-size: 14px;
+}
+.mode-upload.mode-upload-drag p.mode-upload-hint {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.43);
+}
+.mode-upload.mode-upload-drag .anticon-plus {
+  font-size: 30px;
+  transition: all 0.3s ease;
+  color: rgba(0, 0, 0, 0.25);
+}
+.mode-upload.mode-upload-drag .anticon-plus:hover {
+  color: rgba(0, 0, 0, 0.43);
+}
+.mode-upload.mode-upload-drag:hover .anticon-plus {
+  color: rgba(0, 0, 0, 0.43);
+}
+.mode-upload-list {
+  overflow: hidden;
+}
+.mode-upload-list-item {
+  overflow: hidden;
+  margin-top: 8px;
+  font-size: 12px;
+  position: relative;
+  height: 24px;
+}
+.mode-upload-list-item-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 16px;
+  width: 100%;
+  display: inline-block;
+}
+.mode-upload-list-item-info {
+  line-height: 24px;
+  padding: 0 12px 0 4px;
+  transition: background-color 0.3s;
+}
+.mode-upload-list-item-info .anticon-loading,
+.mode-upload-list-item-info .anticon-paper-clip {
+  margin-right: 4px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.43);
+  position: absolute;
+  top: 5.5px;
+}
+.mode-upload-list-item .anticon-cross {
+  display: inline-block;
+  font-size: 12px;
+  font-size: 10px \9;
+  -webkit-transform: scale(0.83333333) rotate(0deg);
+      -ms-transform: scale(0.83333333) rotate(0deg);
+          transform: scale(0.83333333) rotate(0deg);
+  /* IE6-IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+  zoom: 1;
+  transition: all .3s;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  color: rgba(0, 0, 0, 0.43);
+  line-height: 24px;
+}
+:root .mode-upload-list-item .anticon-cross {
+  -webkit-filter: none;
+          filter: none;
+}
+:root .mode-upload-list-item .anticon-cross {
+  font-size: 12px;
+}
+.mode-upload-list-item .anticon-cross:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+.mode-upload-list-item:hover .mode-upload-list-item-info {
+  background-color: #ecf6fd;
+}
+.mode-upload-list-item:hover .anticon-cross {
+  opacity: 1;
+}
+.mode-upload-list-item-error,
+.mode-upload-list-item-error .anticon-paper-clip,
+.mode-upload-list-item-error .mode-upload-list-item-name {
+  color: #f04134;
+}
+.mode-upload-list-item-error .anticon-cross {
+  opacity: 1;
+  color: #f04134 !important;
+}
+.mode-upload-list-item-progress {
+  line-height: 0;
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.mode-upload-list-picture .mode-upload-list-item,
+.mode-upload-list-picture-card .mode-upload-list-item {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  height: 66px;
+  position: relative;
+}
+.mode-upload-list-picture .mode-upload-list-item:hover,
+.mode-upload-list-picture-card .mode-upload-list-item:hover {
+  background: transparent;
+}
+.mode-upload-list-picture .mode-upload-list-item-error,
+.mode-upload-list-picture-card .mode-upload-list-item-error {
+  border-color: #f04134;
+}
+.mode-upload-list-picture .mode-upload-list-item-info,
+.mode-upload-list-picture-card .mode-upload-list-item-info {
+  padding: 0;
+}
+.mode-upload-list-picture .mode-upload-list-item:hover .mode-upload-list-item-info,
+.mode-upload-list-picture-card .mode-upload-list-item:hover .mode-upload-list-item-info {
+  background: transparent;
+}
+.mode-upload-list-picture .mode-upload-list-item-uploading,
+.mode-upload-list-picture-card .mode-upload-list-item-uploading {
+  border-style: dashed;
+}
+.mode-upload-list-picture .mode-upload-list-item-thumbnail,
+.mode-upload-list-picture-card .mode-upload-list-item-thumbnail {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.mode-upload-list-picture .mode-upload-list-item-thumbnail img,
+.mode-upload-list-picture-card .mode-upload-list-item-thumbnail img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.mode-upload-list-picture .mode-upload-list-item-thumbnail.anticon:before,
+.mode-upload-list-picture-card .mode-upload-list-item-thumbnail.anticon:before {
+  line-height: 48px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.43);
+}
+.mode-upload-list-picture .mode-upload-list-item-name,
+.mode-upload-list-picture-card .mode-upload-list-item-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 0 0 8px;
+  line-height: 44px;
+  transition: all .3s;
+  padding-left: 48px;
+  padding-right: 8px;
+  max-width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.mode-upload-list-picture .mode-upload-list-item-uploading .mode-upload-list-item-name,
+.mode-upload-list-picture-card .mode-upload-list-item-uploading .mode-upload-list-item-name {
+  line-height: 28px;
+}
+.mode-upload-list-picture .mode-upload-list-item-progress,
+.mode-upload-list-picture-card .mode-upload-list-item-progress {
+  padding-left: 56px;
+  margin-top: 0;
+}
+.mode-upload-list-picture .anticon-cross,
+.mode-upload-list-picture-card .anticon-cross {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  line-height: 1;
+}
+.mode-upload-list-picture-card {
+  display: inline;
+}
+.mode-upload-list-picture-card .mode-upload-list-item {
+  float: left;
+  width: 96px;
+  height: 96px;
+  margin: 0 8px 8px 0;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-info {
+  height: 100%;
+  position: relative;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-info:before {
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all .3s;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.mode-upload-list-picture-card .mode-upload-list-item:hover .mode-upload-list-item-info:before {
+  opacity: 1;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-actions {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all .3s;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-actions .anticon-eye-o,
+.mode-upload-list-picture-card .mode-upload-list-item-actions .anticon-delete {
+  z-index: 10;
+  transition: all .3s;
+  cursor: pointer;
+  font-size: 16px;
+  width: 16px;
+  color: rgba(255, 255, 255, 0.91);
+  margin: 0 4px;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-actions .anticon-eye-o:hover,
+.mode-upload-list-picture-card .mode-upload-list-item-actions .anticon-delete:hover {
+  color: #fff;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-info:hover + .mode-upload-list-item-actions,
+.mode-upload-list-picture-card .mode-upload-list-item-actions:hover {
+  opacity: 1;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-thumbnail,
+.mode-upload-list-picture-card .mode-upload-list-item-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: static;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-name {
+  display: none;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-uploading.mode-upload-list-item {
+  background-color: #fbfbfb;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-uploading .mode-upload-list-item-info {
+  height: auto;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-uploading .mode-upload-list-item-info:before,
+.mode-upload-list-picture-card .mode-upload-list-item-uploading .mode-upload-list-item-info .anticon-eye-o,
+.mode-upload-list-picture-card .mode-upload-list-item-uploading .mode-upload-list-item-info .anticon-delete {
+  display: none;
+}
+.mode-upload-list-picture-card .mode-upload-list-item-uploading-text {
+  margin-top: 18px;
+  color: rgba(0, 0, 0, 0.43);
+}
+.mode-upload-list-picture-card .mode-upload-list-item-progress {
+  padding-left: 0;
+}
+.mode-upload-list .mode-upload-success-icon {
+  color: #00a854;
+  font-weight: bold;
+}
+.mode-upload-list .mode-upload-animate-enter,
+.mode-upload-list .mode-upload-animate-leave,
+.mode-upload-list .mode-upload-animate-inline-enter,
+.mode-upload-list .mode-upload-animate-inline-leave {
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          animation-fill-mode: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+.mode-upload-list .mode-upload-animate-enter {
+  -webkit-animation-name: uploadAnimateIn;
+          animation-name: uploadAnimateIn;
+}
+.mode-upload-list .mode-upload-animate-leave {
+  -webkit-animation-name: uploadAnimateOut;
+          animation-name: uploadAnimateOut;
+}
+.mode-upload-list .mode-upload-animate-inline-enter {
+  -webkit-animation-name: uploadAnimateInlineIn;
+          animation-name: uploadAnimateInlineIn;
+}
+.mode-upload-list .mode-upload-animate-inline-leave {
+  -webkit-animation-name: uploadAnimateInlineOut;
+          animation-name: uploadAnimateInlineOut;
+}
+@-webkit-keyframes uploadAnimateIn {
+  from {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+  }
+}
+@keyframes uploadAnimateIn {
+  from {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+  }
+}
+@-webkit-keyframes uploadAnimateOut {
+  to {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}
+@keyframes uploadAnimateOut {
+  to {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes uploadAnimateInlineIn {
+  from {
+    width: 0;
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+  }
+}
+@keyframes uploadAnimateInlineIn {
+  from {
+    width: 0;
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+  }
+}
+@-webkit-keyframes uploadAnimateInlineOut {
+  to {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}
+@keyframes uploadAnimateInlineOut {
+  to {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}

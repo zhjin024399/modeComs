@@ -1,0 +1,188 @@
+.mode-alert {
+  position: relative;
+  padding: 8px 48px 8px 38px;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 12px;
+  line-height: 16px;
+}
+.mode-alert.mode-alert-no-icon {
+  padding: 8px 48px 8px 16px;
+}
+.mode-alert-icon {
+  font-size: 14px;
+  top: 9.5px;
+  left: 16px;
+  position: absolute;
+}
+.mode-alert-description {
+  font-size: 12px;
+  line-height: 21px;
+  display: none;
+}
+.mode-alert-success {
+  border: 1px solid #cfefdf;
+  background-color: #ebf8f2;
+}
+.mode-alert-success .mode-alert-icon {
+  color: #00a854;
+}
+.mode-alert-info {
+  border: 1px solid #d2eafb;
+  background-color: #ecf6fd;
+}
+.mode-alert-info .mode-alert-icon {
+  color: #108ee9;
+}
+.mode-alert-warning {
+  border: 1px solid #fff3cf;
+  background-color: #fffaeb;
+}
+.mode-alert-warning .mode-alert-icon {
+  color: #ffbf00;
+}
+.mode-alert-error {
+  border: 1px solid #fcdbd9;
+  background-color: #fef0ef;
+}
+.mode-alert-error .mode-alert-icon {
+  color: #f04134;
+}
+.mode-alert-close-icon {
+  font-size: 12px;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  height: 12px;
+  line-height: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.mode-alert-close-icon .anticon-cross {
+  color: rgba(0, 0, 0, 0.43);
+  transition: color .3s ease;
+}
+.mode-alert-close-icon .anticon-cross:hover {
+  color: #404040;
+}
+.mode-alert-close-text {
+  position: absolute;
+  right: 16px;
+}
+.mode-alert-with-description {
+  padding: 16px 16px 16px 60px;
+  position: relative;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.5;
+}
+.mode-alert-with-description.mode-alert-no-icon {
+  padding: 16px;
+}
+.mode-alert-with-description .mode-alert-icon {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  font-size: 24px;
+}
+.mode-alert-with-description .mode-alert-close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.mode-alert-with-description .mode-alert-message {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.85);
+  display: block;
+  margin-bottom: 4px;
+}
+.mode-alert-with-description .mode-alert-description {
+  display: block;
+}
+.mode-alert.mode-alert-close {
+  height: 0 !important;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+.mode-alert-slide-up-leave {
+  -webkit-animation: antAlertSlideUpOut 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          animation: antAlertSlideUpOut 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.mode-alert-banner {
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+@-webkit-keyframes antAlertSlideUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@keyframes antAlertSlideUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@-webkit-keyframes antAlertSlideUpOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+@keyframes antAlertSlideUpOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}

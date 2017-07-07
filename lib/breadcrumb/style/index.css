@@ -1,0 +1,25 @@
+.mode-breadcrumb {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 12px;
+}
+.mode-breadcrumb a {
+  color: rgba(0, 0, 0, 0.65);
+  transition: color .3s;
+}
+.mode-breadcrumb a:hover {
+  color: #49a9ee;
+}
+.mode-breadcrumb > span:last-child {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+}
+.mode-breadcrumb > span:last-child .mode-breadcrumb-separator {
+  display: none;
+}
+.mode-breadcrumb-separator {
+  margin: 0 8px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.mode-breadcrumb-link > .anticon + span {
+  margin-left: 4px;
+}

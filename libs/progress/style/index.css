@@ -1,0 +1,135 @@
+.mode-progress {
+  display: inline-block;
+}
+.mode-progress-line {
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+}
+.mode-progress-outer {
+  display: inline-block;
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0;
+}
+.mode-progress-show-info .mode-progress-outer {
+  padding-right: 2.75em;
+  margin-right: -2.75em;
+}
+.mode-progress-inner {
+  display: inline-block;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+.mode-progress-circle-trail {
+  stroke: #f7f7f7;
+}
+.mode-progress-circle-path {
+  stroke: #108ee9;
+}
+.mode-progress-bg {
+  border-radius: 100px;
+  background-color: #108ee9;
+  transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+  position: relative;
+}
+.mode-progress-text {
+  width: 2em;
+  text-align: left;
+  font-size: 1em;
+  margin-left: 0.75em;
+  vertical-align: middle;
+  display: inline-block;
+}
+.mode-progress-text .anticon {
+  font-size: 12px;
+}
+.mode-progress-status-active .mode-progress-bg:before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-animation: mode-progress-active 2.4s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+          animation: mode-progress-active 2.4s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+.mode-progress-status-exception .mode-progress-bg {
+  background-color: #f04134;
+}
+.mode-progress-status-exception .mode-progress-text {
+  color: #f04134;
+}
+.mode-progress-status-exception .mode-progress-circle-path {
+  stroke: #f04134;
+}
+.mode-progress-status-success .mode-progress-bg {
+  background-color: #00a854;
+}
+.mode-progress-status-success .mode-progress-text {
+  color: #00a854;
+}
+.mode-progress-status-success .mode-progress-circle-path {
+  stroke: #00a854;
+}
+.mode-progress-circle .mode-progress-inner {
+  position: relative;
+  line-height: 1;
+  background-color: transparent;
+}
+.mode-progress-circle .mode-progress-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  font-family: tahoma;
+  margin: 0;
+}
+.mode-progress-circle .mode-progress-text .anticon {
+  font-size: 1.16666667em;
+}
+.mode-progress-circle .mode-progress-status-exception .mode-progress-text {
+  color: #f04134;
+}
+.mode-progress-circle .mode-progress-status-success .mode-progress-text {
+  color: #00a854;
+}
+@-webkit-keyframes mode-progress-active {
+  0% {
+    opacity: 0.1;
+    width: 0;
+  }
+  20% {
+    opacity: 0.5;
+    width: 0;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes mode-progress-active {
+  0% {
+    opacity: 0.1;
+    width: 0;
+  }
+  20% {
+    opacity: 0.5;
+    width: 0;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}

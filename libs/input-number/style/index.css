@@ -1,0 +1,256 @@
+.mode-input-number {
+  position: relative;
+  padding: 4px 7px;
+  width: 100%;
+  cursor: text;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  background-image: none;
+  transition: all .3s;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  width: 80px;
+}
+.mode-input-number::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.mode-input-number:-ms-input-placeholder {
+  color: #ccc;
+}
+.mode-input-number::-webkit-input-placeholder {
+  color: #ccc;
+}
+.mode-input-number:hover {
+  border-color: #49a9ee;
+}
+.mode-input-number:focus {
+  border-color: #49a9ee;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+}
+.mode-input-number[disabled] {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+.mode-input-number[disabled]:hover {
+  border-color: #e2e2e2;
+}
+textarea.mode-input-number {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.mode-input-number-lg {
+  padding: 6px 7px;
+  height: 32px;
+}
+.mode-input-number-sm {
+  padding: 1px 7px;
+  height: 22px;
+}
+.mode-input-number-handler {
+  text-align: center;
+  line-height: 0;
+  height: 50%;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.43);
+  position: relative;
+  transition: all 0.1s linear;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+.mode-input-number-handler:active {
+  background: #f4f4f4;
+}
+.mode-input-number-handler:hover .mode-input-number-handler-up-inner,
+.mode-input-number-handler:hover .mode-input-number-handler-down-inner {
+  color: #49a9ee;
+}
+.mode-input-number-handler-up-inner,
+.mode-input-number-handler-down-inner {
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transition: all 0.1s linear;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 7px \9;
+  -webkit-transform: scale(0.58333333) rotate(0deg);
+      -ms-transform: scale(0.58333333) rotate(0deg);
+          transform: scale(0.58333333) rotate(0deg);
+  /* IE6-IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+  zoom: 1;
+  right: 4px;
+  color: rgba(0, 0, 0, 0.43);
+}
+.mode-input-number-handler-up-inner:before,
+.mode-input-number-handler-down-inner:before {
+  display: block;
+  font-family: "anticon" !important;
+}
+:root .mode-input-number-handler-up-inner,
+:root .mode-input-number-handler-down-inner {
+  -webkit-filter: none;
+          filter: none;
+}
+:root .mode-input-number-handler-up-inner,
+:root .mode-input-number-handler-down-inner {
+  font-size: 12px;
+}
+.mode-input-number:hover {
+  border-color: #49a9ee;
+}
+.mode-input-number-focused {
+  border-color: #49a9ee;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+}
+.mode-input-number-disabled {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+.mode-input-number-disabled:hover {
+  border-color: #e2e2e2;
+}
+.mode-input-number-input {
+  width: 100%;
+  text-align: left;
+  outline: 0;
+  -moz-appearance: textfield;
+  height: 26px;
+  transition: all 0.3s linear;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 0 7px;
+}
+.mode-input-number-input::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.mode-input-number-input:-ms-input-placeholder {
+  color: #ccc;
+}
+.mode-input-number-input::-webkit-input-placeholder {
+  color: #ccc;
+}
+.mode-input-number-input[disabled] {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+.mode-input-number-input[disabled]:hover {
+  border-color: #e2e2e2;
+}
+.mode-input-number-lg {
+  padding: 0;
+}
+.mode-input-number-lg input {
+  height: 30px;
+}
+.mode-input-number-sm {
+  padding: 0;
+}
+.mode-input-number-sm input {
+  height: 20px;
+}
+.mode-input-number-handler-wrap {
+  border-left: 1px solid #d9d9d9;
+  width: 22px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 0 4px 4px 0;
+  transition: opacity 0.24s linear 0.1s;
+  z-index: 2;
+}
+.mode-input-number-handler-wrap:hover .mode-input-number-handler {
+  height: 40%;
+}
+.mode-input-number:hover .mode-input-number-handler-wrap {
+  opacity: 1;
+}
+.mode-input-number-handler-up {
+  cursor: pointer;
+}
+.mode-input-number-handler-up-inner {
+  top: 50%;
+  margin-top: -6px;
+}
+.mode-input-number-handler-up-inner:before {
+  text-align: center;
+  content: "\e61e";
+}
+.mode-input-number-handler-up:hover {
+  height: 60%!important;
+}
+.mode-input-number-handler-down {
+  border-top: 1px solid #d9d9d9;
+  top: -1px;
+  cursor: pointer;
+}
+.mode-input-number-handler-down-inner {
+  top: 50%;
+  margin-top: -6px;
+}
+.mode-input-number-handler-down-inner:before {
+  text-align: center;
+  content: "\e61d";
+}
+.mode-input-number-handler-down:hover {
+  height: 60%!important;
+}
+.mode-input-number-handler-down-disabled .mode-input-number-handler-down-inner,
+.mode-input-number-handler-up-disabled .mode-input-number-handler-down-inner,
+.mode-input-number-disabled .mode-input-number-handler-down-inner,
+.mode-input-number-handler-down-disabled .mode-input-number-handler-up-inner,
+.mode-input-number-handler-up-disabled .mode-input-number-handler-up-inner,
+.mode-input-number-disabled .mode-input-number-handler-up-inner {
+  opacity: 0.72;
+  color: #ccc !important;
+  cursor: not-allowed;
+}
+.mode-input-number-disabled .mode-input-number-input {
+  opacity: 0.72;
+  cursor: not-allowed;
+  background-color: #f7f7f7;
+}
+.mode-input-number-disabled .mode-input-number-handler-wrap {
+  display: none;
+}
+.mode-input-number-disabled .mode-input-number-handler {
+  opacity: 0.72;
+  color: #ccc !important;
+  cursor: not-allowed;
+}
